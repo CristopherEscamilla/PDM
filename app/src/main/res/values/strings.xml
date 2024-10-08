@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PDM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="l2_act_tv_header_reply">Mensaje de recibido</string>
+    <string name="l2_act_bttn_enviar">Enviar</string>
+    <string name="l2_act_message_hint">Escribe aqui un mensaje</string>
+    <string name="l2_act_tv_second_title">Segunda Actividad</string>
+    <string name="l2_act_tv_first_title">Primera Actividad</string>
+    <string name="bttn_java">JAVA</string>
+    <string name="bttn_XML">XML</string>
+
+
+</resources>
