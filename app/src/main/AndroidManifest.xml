@@ -22,6 +22,27 @@
             android:name=".java.activities.lesson2.SecondActivity"
             android:exported="true" />
         <activity
+            android:name=".java.activities.listas.MainListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".java.activities.menus.MainMenusActivity"
+            android:exported="true" />
+        <activity
+            android:name=".java.activities.menus.MainMenusActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".java.activities.menus.Menus_Activity_Order"
+            android:exported="true" />
+        <activity
+            android:name=".java.activities.listas.MainListAdapterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".java.activities.listas.MainCardListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".java.activities.listas.DetailActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

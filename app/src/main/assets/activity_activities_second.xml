@@ -5,42 +5,46 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".java.activities.SecondActivity">
+    tools:context=".java.activities.lesson2.SecondActivity">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:text="@string/l2_act_tv_second_title"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:layout_margin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_second_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="105dp"
         android:text="@string/l2_act_tv_header_reply"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_respuesta"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/tv_second_act"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:layout_marginEnd="16dp"
         android:text=""
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tv_respuesta"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_second_header"
-        app:layout_constraintVertical_bias="0.110000014" />
+        app:layout_constraintTop_toBottomOf="@id/tv_second_header" />
 
     <TextView
         android:id="@+id/textView2"
@@ -67,12 +71,13 @@
         android:id="@+id/bttn_enviar"
         android:layout_width="91dp"
         android:layout_height="wrap_content"
-        android:onClick="returnReply"
         android:layout_marginEnd="16dp"
+        android:onClick="returnReply"
         android:text="@string/l2_act_bttn_enviar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bttn_xml"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
 
     <Button
         android:id="@+id/bttn_java"
@@ -93,4 +98,40 @@
         android:layout_margin="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_second_act" />
+
+    <TextView
+        android:id="@+id/tv_serializable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_array" />
+
+    <TextView
+        android:id="@+id/tv_parceable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_serializable" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

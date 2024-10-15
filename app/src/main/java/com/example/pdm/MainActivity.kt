@@ -12,6 +12,10 @@ import com.example.pdm.adapters.StringAdapter
 import com.example.pdm.databinding.ActivityMainBinding
 import com.example.pdm.interfaces.OnItemClickListener
 import com.example.pdm.java.activities.lesson2.FirstActivity
+import com.example.pdm.java.activities.listas.MainCardListActivity
+import com.example.pdm.java.activities.listas.MainListActivity
+import com.example.pdm.java.activities.listas.MainListAdapterActivity
+import com.example.pdm.java.activities.menus.MainMenusActivity
 import com.example.pdm.providers.SubtemasProvider
 
 class MainActivity : AppCompatActivity(), OnItemClickListener {
@@ -41,12 +45,19 @@ class MainActivity : AppCompatActivity(), OnItemClickListener {
     override fun onItemClick(item: String, position: Int) {
         // Aquí puedes manejar lo que sucede al hacer clic en un ítem
 
-        if(position==0){
-            val intent = Intent(this, FirstActivity::class.java)
-            startActivity(intent)
-        }else{
-            Toast.makeText(this, "Clic en $item", Toast.LENGTH_SHORT).show()
+        when (position) {
+            0 -> {openSecondActivity(FirstActivity::class.java)}
+            2 -> {openSecondActivity(MainListActivity::class.java)}
+            3 -> {openSecondActivity(MainListAdapterActivity::class.java)}
+            4 -> {openSecondActivity(MainCardListActivity::class.java)}
+            5 -> {openSecondActivity(MainMenusActivity::class.java)}
+
         }
 
+    }
+
+    private fun openSecondActivity(classToOpen: Class<*>) {
+        val intent = Intent(this, classToOpen)
+        startActivity(intent)
     }
 }

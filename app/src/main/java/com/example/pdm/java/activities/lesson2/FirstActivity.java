@@ -17,7 +17,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.pdm.R;
 import com.example.pdm.SourceActivity;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 public class FirstActivity extends AppCompatActivity  {
@@ -36,7 +35,7 @@ public class FirstActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_activities_first);
+        setContentView(R.layout.activity_lesson2_first);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
